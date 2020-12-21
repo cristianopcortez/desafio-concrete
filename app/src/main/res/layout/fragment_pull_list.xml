@@ -14,11 +14,11 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/loading_cars"
+            android:id="@+id/loading_pulls"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center_vertical|center_horizontal"
-            android:text="@string/loading_repositories"
+            android:text="@string/loading_pulls"
             android:textAlignment="center"
             app:visibleGone="@{isLoading}"/>
 
@@ -34,7 +34,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:textSize="@dimen/car_header1"
+                android:textSize="@dimen/pull_header1"
                 android:text="@string/repositories"
                 android:textStyle="bold"
                 android:layout_marginTop="20dp"

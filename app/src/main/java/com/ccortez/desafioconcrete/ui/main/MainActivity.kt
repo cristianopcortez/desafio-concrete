@@ -30,6 +30,7 @@ class MainActivity : BaseActivity<MainViewModel, ActivityMainBinding>() {
             }
         }
         mViewBinding!!.setIsLoading(true)
+        mViewBinding.loadingRepositories.visibility = VISIBLE
 
         initObservers()
 
@@ -44,6 +45,7 @@ class MainActivity : BaseActivity<MainViewModel, ActivityMainBinding>() {
             mViewBinding.progressBar.visibility = GONE
             mViewBinding.repoList.visibility = VISIBLE
             mViewBinding!!.setIsLoading(false)
+            mViewBinding.loadingRepositories.visibility = GONE
             val list = it
             repositoryPagedListAdapter.submitList(list)
         })

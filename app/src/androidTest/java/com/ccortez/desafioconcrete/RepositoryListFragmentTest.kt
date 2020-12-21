@@ -82,7 +82,7 @@ class RepositoryListFragmentTest {
                 .applicationContext as GithubApp
 
         mockWebServer = MockWebServer()
-        mockWebServer!!.setDispatcher(dispatcher)
+        mockWebServer!!.dispatcher = dispatcher
         mockWebServer!!.start(SERVER_PORT)
         ApiUrls.API_BASE_URL = mockWebServer!!.url("/").toString()
         InstrumentationRegistry.registerInstance(
@@ -180,7 +180,7 @@ class RepositoryListFragmentTest {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
 
-        val expected = 0
+        val expected = 1
 
         Thread.sleep(5000);
 

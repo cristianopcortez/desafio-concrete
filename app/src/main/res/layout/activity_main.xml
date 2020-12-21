@@ -21,13 +21,13 @@
             tools:context=".ui.main.MainActivity">
 
             <TextView
-                android:id="@+id/loading_cars"
+                android:id="@+id/loading_repositories"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center_vertical|center_horizontal"
-                android:text="@string/loading_repositories"
+                android:text="@string/loading_repository"
                 android:textAlignment="center"
-                app:visibleGone="@{isLoading}"/>
+                />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/repo_list"
@@ -38,7 +38,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                tools:listitem="@layout/row_users" />
+                tools:listitem="@layout/item_repository" />
 
             <ProgressBar
                 android:id="@+id/progressBar"

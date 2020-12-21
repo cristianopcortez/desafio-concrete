@@ -5,7 +5,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
-        <variable name="car" type="com.ccortez.desafioconcrete.model.Repositories"/>
         <variable name="item" type="com.ccortez.desafioconcrete.model.ItemEntity"/>
         <variable name="callback" type="com.ccortez.desafioconcrete.ui.callback.RepositoryClickCallback"/>
     </data>
@@ -25,7 +24,7 @@
             android:layout_marginStart="@dimen/margin_default"
             android:layout_marginTop="@dimen/margin_default"
             android:maxLines="1"
-            android:textColor="@color/challenge_blue_card_title"
+            android:textColor="@color/blue_card_title"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -60,7 +59,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
-            android:textColor="@color/desafio_dourado"
+            android:textColor="@color/gold"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/fork_icon"
             app:layout_constraintTop_toTopOf="@+id/fork_icon"
@@ -83,7 +82,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
-            android:textColor="@color/desafio_dourado"
+            android:textColor="@color/gold"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/repo_star_icon"
             app:layout_constraintTop_toTopOf="@+id/repo_star_icon"
@@ -112,7 +111,7 @@
                 android:id="@+id/repo_user_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/challenge_blue_card_title"
+                android:textColor="@color/blue_card_title"
                 android:textSize="12sp"
                 android:maxLines="1"
                 android:ellipsize="end"

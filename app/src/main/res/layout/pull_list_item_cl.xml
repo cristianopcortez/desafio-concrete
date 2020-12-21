@@ -5,7 +5,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
-        <variable name="car" type="com.ccortez.desafioconcrete.model.Repositories"/>
         <variable name="item" type="com.ccortez.desafioconcrete.model.PullRequest"/>
         <variable name="callback" type="com.ccortez.desafioconcrete.ui.callback.RepositoryPullsItemClickCallback"/>
     </data>
@@ -46,7 +45,7 @@
                 android:layout_marginEnd="@dimen/margin_default"
                 android:ellipsize="end"
                 android:textAppearance="?android:attr/textAppearanceSmall"
-                android:textColor="@color/challenge_blue_card_title"
+                android:textColor="@color/blue_card_title"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
